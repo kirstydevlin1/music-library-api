@@ -13,4 +13,3 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => res.send('Hello MongoDb!'));
 
 app.listen(3000, () => console.log('It works!'));
-
