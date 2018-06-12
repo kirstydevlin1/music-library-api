@@ -10,6 +10,8 @@ require('dotenv').config({
 const app = express();
 mongoose.connect(process.env.DATABASE_CONN);
 app.use(bodyParser.json());
-app.get('/', (req, res) => res.send('Hello MongoDb!'));
+app.get('/Artist', (req, res) => res.send('Hello MongoDb!'));
 
 app.listen(3000, () => console.log('It works!'));
+
+app.post('/Artist', (req, res) => res.send('Artist'));
